@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
- -->       
-
-
+ -->   
+ <script src="https://kit.fontawesome.com/4e035445ec.js" crossorigin="anonymous"></script>    
 </head>
 <body>
-    <nav>
+     <nav>
         <div class="nav-wrapper indigo">
             <div class="container">
                 <a href="#" class="brand-logo">Sofia Mejia</a>
@@ -34,64 +33,90 @@
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
-    <div class="container" style="padding: 20px">
+    <!--main display of projects-->
+  <div class="container" style="padding: 20px">
         <h2 class="center-align">Portfolio</h2>
-        <div class="row center-align">
-            <div class="col s12 m6">
-              <div class="card">
-                <div class="card-image">
-                  <img src="assets/neverBored.jpg">
-                  <span class="card-title"></span>
-                </div>
-                <div class="card-content">
-                  <p>Never Bored! was a joint project created to relieve boredom by suggesting things to do.</p>
-                </div>
-                <div class="card-action">
-                  <a style="color: #E91E63" target="_blank" href="https://myfyrefly.github.io/bored-project/">Cure your boredom today!</a>
-                </div>
+        <!--dreamstream card-->
+        <div class="row">
+          <div class="col m6">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/dreamstream.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">dreamstream<i class="material-icons right">more_vert</i></span>
+                <p><a style="color: #E91E63" target="_blank" href="https://shrouded-fjord-87134.herokuapp.com/login">set your dreams free...</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">dreamstream<i class="material-icons right">close</i></span>
+                <p>A social dream app where users can share their dreams anonymously and without judgement.</p>
+                  <p>
+                  This application was a built using the following libraries/technologies:<br>
+                  Node, Express, Passport, Bcrypt, Sequelize, Pixabay API, Handlebars, Bootstrap
+                </p>
               </div>
             </div>
-            <div class="row center-align">
-              <div class="col s12 m6">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="assets/fizz-quiz.jpg">
-                    <span class="card-title"></span>
-                  </div>
-                  <div class="card-content">
-                    <p>Test your soda knowledge with Fizz Quiz! a fun multiple choice game application.</p>
-                  </div>
-                  <div class="card-action">
-                    <a style="color: #E91E63" target="_blank" href="https://myfyrefly.github.io/fizz-quiz/">Whiz the quiz!</a>
-                  </div>
-                </div>
-              </div>
           </div>
-          <div class="row center-align">
-            <div class="col s12 m6 offset-l3">
-              <div class="card">
-                <div class="card-image">
-                  <img src="assets/workDay.jpg">
-                  <span class="card-title"></span>
-                </div>
-                <div class="card-content">
-                  <p>The Daily Dash app is a simple daily planner. It also includes daily quotes sourced from an API.</p>
-                </div>
-                <div class="card-action">
-                  <a style="color: #E91E63" target="_blank" href="https://myfyrefly.github.io/daily-dash/">Plan your day now!</a>
-                </div>
+          <!--never bored card-->
+          <div class="col m6">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/neverBored.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Never Bored!<i class="material-icons right">more_vert</i></span>
+                <p><a style="color: #E91E63" target="_blank" href="https://myfyrefly.github.io/bored-project/">Cure your boredom today!</a>
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Never Bored!<i class="material-icons right">close</i></span>
+                <p>Never Bored! was a joint project created to relieve boredom by suggesting things to do in your area.</p>
+                <p>
+                  This application was a built using the following libraries/technologies:<br>
+                  Materialize CSS, Google Maps API, Bored API
+                </p>
               </div>
             </div>
+          </div>
         </div>
-        
-
+<!--END OF FIRST ROW-->
+<div class="row">
+  <div class="col m6">
+    <!--FIZZ QUIZ CARD-->
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="assets/fizz-quiz.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Fizz Quiz<i class="material-icons right">more_vert</i></span>
+        <p>
+          <a style="color: #E91E63" target="_blank" href="https://myfyrefly.github.io/fizz-quiz/">Whiz this quiz!
           
-                    
+        </a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Fizz Quiz<i class="material-icons right">close</i></span>
+        <p>Test your soda knowledge with Fizz Quiz! a fun multiple choice game application.</p>        
+      </div>
     </div>
-              
-    
-    
-
+  </div>
+  <!--DAY PLANNER CARD-->
+  <div class="col m6">
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="assets/workDay.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Daily Dash<i class="material-icons right">more_vert</i></span>
+        <a style="color: #E91E63" target="_blank" href="https://myfyrefly.github.io/daily-dash/">Plan your day now!</a>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Daily Dash<i class="material-icons right">close</i></span>
+        <p>The Daily Dash app is a simple daily planner. It also includes daily quotes sourced from an API.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

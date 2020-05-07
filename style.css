@@ -28,3 +28,7 @@ a {
     border-style: solid;
     border-color:#E91E63;
 }
+
+.card {
+    width: 400px;
+}
